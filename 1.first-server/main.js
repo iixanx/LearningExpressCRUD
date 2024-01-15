@@ -16,3 +16,4 @@ server.listen(8080, () => { // 매개변수가 없는 화살표 함수
 })
 
 // 실행 : node main.js
+// 접속 : localhost:8080
