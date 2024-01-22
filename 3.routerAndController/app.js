@@ -1,6 +1,6 @@
 // Packages
 const express = require('express'); // express를 불러와서 express 변수에 할당
-const dotenv = require('dotenv');
+const dotenv = require('dotenv'); // 환경변수
 const cors = require('cors'); // cors 설정
 const path = require('path'); // path 설정
 
