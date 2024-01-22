@@ -1,6 +1,5 @@
 const router = require('express')();
 const auth = require('../controller/auth');
-const { validateAccess } = require('../middleware/jwt');
 // auth = token domain
 
 router.post('/signin', auth.signIn); // 로그인

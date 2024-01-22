@@ -1,11 +1,12 @@
 const router = require('express')();
 const user = require('../controller/user');
+const validateAccess = require('../middleware/jwt');
 
 router.post('/signup', user.signUp); // 회원가입
-router.get('/my', ); // 유저 마이페이지
-router.patch('/info', ); // 정보 수정
-router.patch('/password', ); // 비밀번호 수정
-router.delete('/delacc', ); // 회원탈퇴
+router.get('/my', validateAccess, user.mypage); // 유저 마이페이지
+router.patch('/info', validateAccess, ); // 정보 수정
+router.patch('/password', validateAccess, ); // 비밀번호 수정
+router.delete('/delacc', validateAccess, ); // 회원탈퇴
 
 module.exports = router;
 // sequelize <-
