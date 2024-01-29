@@ -1,4 +1,3 @@
-const { where } = require('sequelize');
 const { write } = require('../model');
 
 const getList = async (req, res) => {
@@ -85,7 +84,7 @@ const deleteOne = async (req, res) => {
     const { id } = req.params;
 
     const thisBoard = await write.findOne({
-        where: { writeId: id}
+        where: { writeId: id }
     })
 
     if(!thisBoard) return res.status(404).json({ "res" : "존재하지 않는 데이터" })
