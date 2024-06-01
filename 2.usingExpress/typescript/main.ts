@@ -1,5 +1,5 @@
 // npm i @types/express @types/cors --force
-import express from 'express' // const express = require('express');
+import express, { request, response } from 'express' // const express = require('express');
 import cors from 'cors'
 import { configDotenv } from 'dotenv'
 

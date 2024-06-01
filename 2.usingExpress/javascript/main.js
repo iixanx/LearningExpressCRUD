@@ -7,7 +7,7 @@ dotenv.configDotenv({
     path: '../.env'
 }); // 환경변수 설정 (env 파일 환경변수 사용을 위해서는 필수!)
 
-const PORT = process.env.PORT || 8000 // env 파일에 PORT를 가져오는데 없으면 8000번을 사용
+const PORT = process.env.PORT ?? 8000 // env 파일에 PORT를 가져오는데 없으면 8000번을 사용
 
 const app = express();
 

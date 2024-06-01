@@ -7,5 +7,6 @@ app.get('/:id', board.getOne); // http://localhost:8080/1
 app.put('/:id', board.putOne);
 app.patch('/:id', board.patchOne);
 app.delete('/:id', board.deleteOne);
+app.post('/find', board.findWrite)
 
 module.exports = app;
